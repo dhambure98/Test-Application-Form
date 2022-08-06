@@ -91,7 +91,7 @@ export default function LoginForm(props) {
                                 Create an new user account *
 
                                 <Button
-                                    href="#text-buttons"
+                                    href="RegistrationForm"
                                     sx={{textTransform: "none"}}
                                     alignItems={'center'}>
                                     Click here
