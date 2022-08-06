@@ -4,8 +4,10 @@ import React, {Component} from "react";
 import { styleSheet } from "./style";
 import TextField from '@mui/material/TextField';
 import GDSEButton from "../../../components/common/Button";
+import LockOutlinedIcon from "@mui/icons-material/LockOutlined";
+import Avatar from "@mui/material/Avatar";
 
-class LoginScreen extends Component {
+class LoginScreenThree extends Component {
     constructor(props) {
         super(props);
         // to values assign create this.statement
@@ -52,14 +54,19 @@ class LoginScreen extends Component {
         return (
             <div className={classes.container}>
                 <div className={classes.login__cover}>
+
+                    <Avatar sx={{ m: 1, bgcolor: 'secondary.main' }}>
+                        <LockOutlinedIcon />
+                    </Avatar>
+
                     <div className={classes.title__container}>
-                        <Typography variant="h4">Login</Typography>
+                        <Typography component="h1" variant="h5"> Sign in </Typography>
                     </div>
 
                     <div className={classes.form__container}>
                         <TextField
                             id="outlined-basic"
-                            label="User name"
+                            label="Username"
                             variant="outlined"
                             onChange={(e) => {
                                 console.log(e.target.value)
@@ -96,4 +103,4 @@ class LoginScreen extends Component {
     }
 }
 
-export default withStyles(styleSheet)(LoginScreen)
+export default withStyles(styleSheet)(LoginScreenThree)

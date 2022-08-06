@@ -12,20 +12,17 @@ export const styleSheet = {
         display: 'flex',
         flexWrap: 'wrap',
         flexDirection: 'column',
-        height: '70%',
-        width: '30%',
+        height: '80%',
+        width: '35%',
         alignItems: 'center',
         justifyContent: 'center',
-        border: 'black solid',
-        borderRadius: '20px',
-        borderWidth: '2px',
-        borderColor: '#64b5f6',
+        borderRadius: '10px',
         backgroundColor: '#bbdefb',
     },
     title__container: {
         display: 'flex',
         alignItems: 'center',
-        height: '20%',
+        height: '10%',
     },
     form__container: {
         display: 'flex',
@@ -34,6 +31,7 @@ export const styleSheet = {
         width: '100%',
         alignItems: 'center',
         justifyContent: 'space-around',
+
     },
     btn__container: {
         height: '20%',
