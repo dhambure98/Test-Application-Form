@@ -4,9 +4,10 @@ import Typography from "@mui/material/Typography";
 import {Checkbox, FormControlLabel, InputAdornment, TextField} from "@mui/material";
 import {AccountCircle} from "@material-ui/icons";
 import Button from "@mui/material/Button";
+import {useNavigate} from "react-router-dom";
 
 export default function LoginForm(props) {
-
+    const navigate = useNavigate();
 
     return(
         <Stack justifyContent={'center'} alignItems={'center'} height={'100vh'} width={'100vw'} maxWidth={'100%'}
@@ -31,11 +32,11 @@ export default function LoginForm(props) {
                     </Typography>
                 </Stack>
 
-                <Stack position={'relative'} direction={'column'} spacing={6}>
-                    <Stack width={'70%'} direction={'column'} spacing={3}>
+                <Stack width={'60%'} position={'relative'} direction={'column'} spacing={6}>
+                    <Stack width={'65%'} direction={'column'} spacing={3} >
                         <TextField
                             id="input-with-icon-textfield"
-                            label="Username / Email"
+                            label="Username"
                             InputProps={{
                                 startAdornment: (
                                     <InputAdornment position="start">
@@ -44,7 +45,7 @@ export default function LoginForm(props) {
                                 ),
                             }}
                             variant="standard"
-                            sx={{width: '300px'}}
+                            sx={{width: '330px'}}
                             type={'text'}
                             /*onChange={handleChangeUserName}*/
                         />
@@ -62,7 +63,7 @@ export default function LoginForm(props) {
                             }}
                             size={'small'}
                             variant="standard"
-                            sx={{width: '300px'}}
+                            sx={{width: '330px'}}
                             // onChange={handleChangePassword}
                         />
 
@@ -80,7 +81,7 @@ export default function LoginForm(props) {
                                     /*onClick={() => sign_in_onClick(username)}*/>{'Login'}</Button>
                         </Stack>
 
-                        <Stack>
+                        <Stack width={'200%'} direction={'column'} spacing={3} >
                             <Typography
                                 fontSize={'15px'}
                                 width={'fit-content'}
@@ -88,10 +89,11 @@ export default function LoginForm(props) {
                                 fontFamily={'Roboto'}
                                 fontWeight={450}
                                 alignItems={'center'}>
-                                Create an new user account *
+                                Create new account *
 
                                 <Button
                                     href="RegistrationForm"
+                                    onClick={()=>navigate('/RegistrationForm')}
                                     sx={{textTransform: "none"}}
                                     alignItems={'center'}>
                                     Click here

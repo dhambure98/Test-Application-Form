@@ -8,11 +8,9 @@ import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 
 export default function RegistrationFrom(props) {
 
-
-
         return(
         <ValidatorForm>
-            <Stack justifyContent={'center'} alignItems={'center'} height={'150vh'} width={'100vw'} maxWidth={'100%'}
+            <Stack justifyContent={'center'} alignItems={'center'} height={'250vh'} width={'100vw'} maxWidth={'100%'}
                    bgcolor={'black'} sx={{
                 backgroundImage: `url("https://t4.ftcdn.net/jpg/03/57/85/41/360_F_357854155_pZ7ueCQaQ8lBl1ePCaaQ5rRUfKctxr7d.jpg")`,
                 backgroundPosition: 'center',
@@ -20,7 +18,7 @@ export default function RegistrationFrom(props) {
                 backgroundRepeat: 'no-repeat'
             }}>
 
-                <Stack height={'120vh'} width={'70vw'} spacing={3} border={'1px solid #e7eaed'} boxShadow={2}
+                <Stack height={'200vh'} width={'70vw'} spacing={3} border={'1px solid #e7eaed'} boxShadow={2}
                        borderRadius={5}
                        alignItems={'center'}
                        bgcolor={'white'}
@@ -28,11 +26,7 @@ export default function RegistrationFrom(props) {
                 >
 
                     <Stack
-                        justifyContent={'center'}
-                        alignItems={'center'}
-                        height={'100vh'}
-                        width={'100vw'}
-                        maxWidth={'100%'} b>
+                        justifyContent={'center'} alignItems={'center'} height={'105vh'} width={'100vw'} maxWidth={'100%'} b>
 
                             <Stack>
                                 <Typography

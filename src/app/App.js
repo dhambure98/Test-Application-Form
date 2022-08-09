@@ -5,12 +5,14 @@ import LoginScreenTwo from "../pages/session/LoginScreenTwo";
 import LoginScreenThree from "../pages/session/LoginScreenThree"
 import HomePageOne from "../pages/HomePageOne/HomePageOne"
 import RegistrationScreen from "../pages/RegistrationScreen";
+import CartManageScreen from "../pages/CartManageScreen";
 
 function App() {
     return (
         <Routes>
             <Route exact path='/' element={<LoginScreen/>}/>
             <Route exact path='RegistrationForm' element={<RegistrationScreen/>}/>
+             <Route exact path='CartManageForm' element={<CartManageScreen/>}/>
 
             <Route exact path='loginScreenTwo' element={<LoginScreenTwo/>}/>
             <Route exact path='loginScreenThree' element={<LoginScreenThree/>}/>
